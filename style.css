@@ -1,0 +1,102 @@
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+    grid-row: 80vh;
+    gap: 25px;
+    padding: 0 2rem;
+}
+section:nth-of-type(2) form {
+    display: grid;
+    align-items: end;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: 20px;
+}
+section:nth-of-type(2) fieldset {
+    border: none;
+}
+section:nth-of-type(1) fieldset button {
+	border: none;
+	border-radius: 5px;
+	background-color: blue;
+	color: white;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0.6rem 2rem;
+	cursor: pointer;
+	filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
+}
+fieldset {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+section:nth-of-type(2) fieldset button {
+    border: blue 2px solid;
+    font-size: 12px;
+    border-radius: 5px;
+	text-transform: uppercase;
+	padding: 0rem 2rem;
+	cursor: pointer;
+	filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
+}
+fieldset button:hover {
+	filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+table {
+	background: white;
+	display: grid;
+	overflow: scroll;
+}
+
+tbody {
+	display: grid;
+}
+
+th,
+td {
+	padding: 2rem 0.5rem;
+	align-self: center;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+tr {
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 20% 20% 15% 15% 15% 15%;
+	border-bottom: 1px solid var(--grey-bg);
+	padding: 0 2rem;
+}
+.picture {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+tr button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	padding: 0rem;
+}
+
+tr button:hover {
+	color: gray;
+}
+.btn_score {
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 5px;
+}
+

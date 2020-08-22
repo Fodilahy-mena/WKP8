@@ -28,6 +28,8 @@ Also, please update this readme with the answer to those questions before submit
 
 1. In a few sentences, explain the structure of your project.
 
+- The index.htm is devided into two sections, the first is all about the furm that has many inputs.
+
 2. If you had more time, what area of your project would you improve?
 
 3. Did you learn anything new while working on this project?

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekend project 8</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        
+        <section>
+            <header>
+                <h1>Hit Parade</h1>
+            </header>
+            <h2>Add a song</h2>
+            <form class="add_form">
+                <fieldset>
+                    <label for="song_title">Song title</label>
+                    <input type="text" id="title" name="title" placeholder="Title" value="Me"/>
+                </fieldset>
+                <fieldset>
+                    <label for="artist_name">Artist name</label>
+                    <input type="text" id="singer" name="singer" placeholder="Artist name"/>
+                </fieldset>
+                <fieldset>
+                    <label for="song_style">Song Style</label>
+                    <select name="style" id="style">
+                        <option value="slow">Slow</option>
+                        <option value="pop">Pop</option>
+                        <option value="pop">Hip hop</option>
+                        <option value="flat">Flat</option>
+                        <option value="rock">Rock</option>
+                        <option value="dancy">Dance</option>
+                        <option value="party">Soul</option>
+                        <option value="club">Country</option>
+                        <option value="jazz">Jazz</option>
+                        <option value="hard">Blues</option>
+                        <option value="other">Other</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label for="song_length">Song length</label>
+                    <input type="number" id="length" name="length" placeholder="Song length"/>
+                </fieldset>
+                <fieldset>
+                    <label for="artist_picture">Artist picture</label>
+                    <input type="url" id="url" name="url" placeholder="Url of an artist pic"/>
+                </fieldset>
+                <fieldset>
+                    <button type="submit">Add</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <form>
+                <fieldset>
+                    <label for="search_song_title">Search a song</label>
+                    <input type="search" id="search" name="search" placeholder="Enater a song title"/>
+                </fieldset>
+                <fieldset>
+                    <label for="select_style">Select a style</label>
+                    <select name="style" id="style">
+                        <option value="" disabled selected hidden>All style.............</option>
+                        <option value="slow">Slow</option>
+                        <option value="pop">Pop</option>
+                        <option value="pop">Hip hop</option>
+                        <option value="flat">Flat</option>
+                        <option value="rock">Rock</option>
+                        <option value="dancy">Dance</option>
+                        <option value="party">Soul</option>
+                        <option value="club">Country</option>
+                        <option value="jazz">Jazz</option>
+                        <option value="hard">Blues</option>
+                        <option value="other">Other</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <button type="reset">Reset filters</button>
+                </fieldset>
+            </form>
+
+            <table>
+                <thead>
+
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
