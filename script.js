@@ -141,4 +141,5 @@ tableBody.addEventListener('updateArtistList', showArtists);
 window.addEventListener('DOMContentLoaded', showArtists);
 tableBody.addEventListener('click', handleClick);
 tableBody.addEventListener('updateArtistList', updateToLocalStorage);
-// SaveToLocalStorage();
+SaveToLocalStorage();
+
