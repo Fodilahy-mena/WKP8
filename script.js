@@ -42,9 +42,9 @@ const showArtists = () => {
             <td>
                 <img class="picture" src="${artist.urlPic}" alt="Artist picture" width=200>
             </td>
-            <td class="grid">
+            <td class="grid td">
                 <span>Song's name</span>
-                <span>${artist.title}</span>
+                <span class="title">${artist.title}</span>
             </td>
             <td class="grid">
                 <span>Artist name</span>
@@ -119,6 +119,30 @@ const deleteArtist = id => {
 const updatedScore = score => {
     artists = artists.filter(artist => artist.score = artist.score + 1);
     tableBody.dispatchEvent(new CustomEvent('updateArtistList'));
+}
+
+// filter the list of song, by searching on the search input form
+
+function searchingSongTitle() {
+var songTitle, textValue, searchInput, fillter, tr, tb, td;
+
+searchInput = document.querySelector('.search');
+fillter = searchInput.value.toUpperCase();
+tr = document.querySelector('tr');
+tb = document.querySelector('tbody');
+td = document.querySelector('.td');
+// const songTitle = document.querySelector('.title');
+
+for (let i = 0; i < tr.length; i++) {
+    songTitle = tr[i].td.querySelector('.title')[0];
+    textValue = songTitle.textContent || songTitle.innerText;
+
+    if(textValue.toUpperCase().indexOf(fillter) > -1) {
+        tr[i].style.display = "";
+    } else {
+        tr[i].style.display = "none";
+    }
+}
 }
 
 
