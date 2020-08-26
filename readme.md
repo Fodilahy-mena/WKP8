@@ -28,13 +28,21 @@ Also, please update this readme with the answer to those questions before submit
 
 1. In a few sentences, explain the structure of your project.
 
-- The index.htm is devided into two sections, the first is all about the furm that has many inputs.
+- The index.htm is devided into two sections, the first is all about the furm that has many inputs. And the second section is about table that generated from script.js
+
+- I ahve an array object to work with and I used map() methode to render them into thml.
+
+- The new inputs from the form element will be pushed inside the arry object after clicking on the submit button. So to get that works, I used dispatchEvent.
+
+- I used an event delegation to delete the list of the song one by one when clicking on the delete button that is closest to its parent.
 
 2. If you had more time, what area of your project would you improve?
 
 3. Did you learn anything new while working on this project?
 
 4. What was the most challenging part for you?
+
+- I have a struggle about filltering the list when we type inside the search form. I tried but I couldn't get it work. I also didn't get the score sorted, I got it but not what I want - all of my scores increase together when clicking on one button.
 
 5. Would you like a new explanation about a specific topic?
 
